@@ -249,6 +249,84 @@
             font-size: 12px;
             text-align: center;
         }
+		
+		
+		
+		/* ======= SECTION LABEL ======= */
+.section-label {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+/* ======= SECTION TITLE ======= */
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.15;
+}
+
+/* ======= PARAGRAPH TEXT ======= */
+.section-text {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text-main);
+    margin-bottom: 16px;
+}
+
+/* ======= SOFT BLOCK (beige card) ======= */
+.section-soft {
+    background: #fffaf4;
+    border: 1px solid #e6d8ca;
+    padding: 28px;
+    border-radius: 0;
+    box-shadow: 0 0 0 rgba(0,0,0,0); /* clean, minimal */
+}
+
+/* ======= QUOTE CARDS ======= */
+.quote-card {
+    background: #fffdf9;
+    border: 1px solid #eaded3;
+    padding: 20px 22px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-main);
+    border-radius: 0;
+}
+
+.quote-card small {
+    display: block;
+    margin-top: 10px;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+/* ======= INFO LIST ======= */
+.info-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--text-main);
+}
+
+.info-list li {
+    margin-bottom: 3px;
+}
+
+/* Line separator */
+.section-soft hr {
+    border-color: #e3d6c9;
+    margin: 16px 0;
+}
     </style>
 </head>
 <body>
@@ -370,10 +448,111 @@
     </div>
 </section>
 
+<!-- MISSION -->
+<section class="py-5">
+    <div class="container-fluid px-3 px-md-4">
+        <div class="row g-4 align-items-stretch">
+            <div class="col-lg-7">
+                <div class="section-soft h-100">
+                    <div class="section-label">Mission Statement</div>
+                    <div class="section-title">Why we sew</div>
+                    <p class="section-text">
+                        Sewing Seeds works to create stuffed animals and blankets for the purpose of donating to patients at
+                        children’s hospitals. Our intentions are to bring joy to children while easing the burden of difficult
+                        times for them and their families. Through these works we hope to further the greater goal of supporting
+                        and uplifting our overall community. We believe God has been generous with us so it is our purpose to be
+                        generous with others.
+                    </p>
+                    <p class="section-text mb-0">
+                        We welcome all levels of sewing skills (or lack thereof) and regardless of religious beliefs or church
+                        affiliations.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="h-100 d-flex flex-column gap-3">
+                    <div class="quote-card">
+                        “Please thank all the people who had a part in creating these ‘Lovies’ and let them know that it means
+                        so much that they support the children at Shriners in such a special, unique way!!”
+                        <small>– Shriners Hospital</small>
+                    </div>
+                    <div class="quote-card">
+                        “We appreciate your support more than you know!”
+                        <small>– Doernbecher Hospital</small>
+                    </div>
+                    <div class="quote-card">
+                        “The stories the ladies attach to the stuffies are inspirational in the sense that they help create a
+                        journey that she can take on the stuffie in the Operating Room…”
+                        <small>– Shriners Hospital</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- MORE ON WHAT WE DO -->
+<section class="pb-5">
+    <div class="container-fluid px-3 px-md-4">
+        <div class="row g-4 align-items-start">
+            <div class="col-lg-6">
+                <div class="section-label">More on what we do</div>
+                <div class="section-title">Little creations, big comfort</div>
+                <p class="section-text">
+                    We are so blessed to see how God is working through this ministry. We have received many donated sewing
+                    machines, sewing tools and notions, fabric, as well as batting and stuffing to make this ministry possible.
+                    Sewing Seeds gathers every week to work on various projects including stuffed animals, rag dolls, quilts,
+                    and accessories that bring our toys to life for kids.
+                </p>
+                <p class="section-text">
+                    These items are then donated in a monthly delivery to Doernbecher and Shriners Children’s Hospitals. As
+                    requested, many stuffed animals are specially customized by our team to include unique personalities and
+                    backstories or even birthday-themed stuffed animals paired with festive cards for kids to color and enjoy.
+                </p>
+                <p class="section-text mb-0">
+                    Overall, we believe this ministry to be a blessing to the patients, their families, and the hospitals that
+                    provide their care as well as a great encouragement to those that gather every week (or even once in a
+                    while) to sew these little creations and connect with each other.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="section-soft h-100">
+                    <div class="row gy-4">
+                        <div class="col-sm-6">
+                            <div class="section-label">Where</div>
+                            <ul class="info-list">
+                                <li>Powellhurst Baptist Church</li>
+                                <li>3435 SE 112th Ave.</li>
+                                <li>Portland, OR 97266</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="section-label">When</div>
+                            <ul class="info-list">
+                                <li>Mondays</li>
+                                <li>6:30–8:00 pm</li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <hr class="my-3" style="border-color: var(--border-soft);">
+                            <div class="section-label">Services</div>
+                            <p class="section-text mb-2">
+                                Services – 9:30 am | Sunday School – 11:00 am Sundays
+                            </p>
+                            <p class="section-text mb-0">
+                                Powellhurst Baptist Church<br>
+                                3435 SE 112th Ave. Portland, OR 97266
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- MISSION -->
-<section class="py-5 container">
+<!--section class="py-5 container">
     <div class="row g-4">
         <div class="col-lg-7">
             <div class="section-soft p-4">
@@ -389,7 +568,7 @@
             </div>
         </div>
     </div>
-</section>
+</section -->
 
 <!-- VOLUNTEERS -->
 <section class="volunteers-section">
