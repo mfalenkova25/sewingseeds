@@ -327,6 +327,50 @@
     border-color: #e3d6c9;
     margin: 16px 0;
 }
+
+
+.volunteers-group-photo {
+    background: #efe7de;
+    padding: 18px;
+    border-radius: 14px;
+    position: relative;
+}
+
+.volunteers-group-photo img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.volunteers-description {
+    font-size: 15px;
+    color: #7a6a5a;
+    letter-spacing: 0.04em;
+}
+
+/* декоративные веточки */
+.volunteers-group-photo::before,
+.volunteers-group-photo::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-image: url('/images/leaf-decoration.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.volunteers-group-photo::before {
+    top: -20px;
+    left: -20px;
+}
+
+.volunteers-group-photo::after {
+    bottom: -20px;
+    right: -20px;
+    transform: rotate(180deg);
+}
     </style>
 </head>
 <body>
@@ -571,6 +615,9 @@
 </section -->
 
 <!-- VOLUNTEERS -->
+
+
+
 <section class="volunteers-section">
     <div class="container">
         <div class="text-center mb-5">
@@ -580,53 +627,27 @@
             </h2>
         </div>
 
-        <div class="row">
+		<div class="row justify-content-center">
+			<div class="col-lg-10">
 
-            <!-- 12 volunteer cards -->
-            <!-- placeholder женский бежевый -->
-            <!-- ты заменишь src на реальные фото -->
+				<div class="volunteers-group-photo">
+					<img src="images/volunteers.png" alt="Sewing Seeds volunteers">
+				</div>
 
-            <!-- Template repeated -->
-            <script>
-                // Будет вставлено JS ниже
-            </script>
+				<div class="volunteers-description text-center mt-4">
+					Our volunteers sew with love, share stories, and create comfort
+					for children through handmade toys.
+				</div>
 
-            <!-- Генерируем 12 карточек -->
-            <script>
-                const volunteers = [
-                    {name:"Anna", text:"Sews plush toys with love and patience."},
-                    {name:"Maria", text:"Creates custom stories for each toy."},
-                    {name:"Joan", text:"Expert in patterned fabrics and cutting."},
-                    {name:"Evelyn", text:"Helps new volunteers feel welcome."},
-                    {name:"Grace", text:"Adds tiny embroidered details."},
-                    {name:"Olivia", text:"Makes rag dolls for infants."},
-                    {name:"Sophie", text:"Designs birthday-themed toys."},
-                    {name:"Natalie", text:"Prepares monthly donation bags."},
-                    {name:"Chloe", text:"Decorates cards for kids’ gifts."},
-                    {name:"Emma", text:"Sorts fabric donations."},
-                    {name:"Claire", text:"Helps with sewing machine setup."},
-                    {name:"Isabella", text:"Creates soft blankets for NICU."},
-                ];
-
-                document.write(
-                    volunteers.map(v => `
-                    <div class="col-6 col-md-4 col-lg-3 volunteer-card">
-                        <div class="volunteer-photo">
-                            <img src=" /">
-                        </div>
-                        <div class="volunteer-name">${v.name}</div>
-                        <div class="volunteer-text">${v.text}</div>
-                    </div>
-                    `).join('')
-                );
-            </script>
-
-        </div>
+			</div>
+		</div>
     </div>
 </section>
 
+
+
 <footer>
-    © ${new Date().getFullYear()} Sewing Seeds – Powellhurst Baptist Church
+    © 2026 Sewing Seeds – Powellhurst Baptist Church
 </footer>
 
 </body>
